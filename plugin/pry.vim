@@ -4,12 +4,13 @@ endif
 
 let g:loaded_pry = 1
 
+nmap <leader>d :call pry#insert()<CR>
+
 let g:pry_map = {
-      \ 'ruby' : "require 'pry'; binding.pry",
-      \ 'javascript' : 'debugger',
-      \ 'javascript.jsx' : 'debugger',
-      \ 'elixir' : 'require IEx; IEx.pry',
-      \}
+\ 'ruby' : "binding.pry",
+\ 'javascript' : 'debugger;',
+\ 'javascript.jsx' : 'debugger;',
+\}
 
 function! pry#insert()
   if has_key(g:pry_map, &filetype)
