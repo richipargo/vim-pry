@@ -10,6 +10,8 @@ let g:pry_map = {
 \ 'ruby' : "binding.pry",
 \ 'javascript' : 'debugger;',
 \ 'javascript.jsx' : 'debugger;',
+\ 'html.handlebars' : '{{debugger}}',
+\ 'php' : 'eval(\Psy\sh());',
 \}
 
 function! pry#insert()
