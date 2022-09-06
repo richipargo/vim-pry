@@ -14,6 +14,7 @@ let g:pry_map = {
 \ 'vue' : 'debugger;',
 \ 'html.handlebars' : '{{debugger}}',
 \ 'php' : 'eval(\Psy\sh());',
+\ 'python' : 'import pdb; pdb.set_trace()',
 \}
 
 function! pry#insert()
